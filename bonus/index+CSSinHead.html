@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio viaggio a Londra</title>
+    <style>
+        body {
+            background-color: rgb(158, 158, 158);
+            color: white;
+        }
+        header {
+            background-color: rgb(86, 86, 86);
+            border: 0px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        .headImg {
+            display: flex;
+            justify-content: center;
+        }
+        img {margin: 0px 2px;}
+        div {
+            margin:auto;
+            background-color: rgb(86, 86, 86);
+            border: 0px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        div.Flex {
+            background-color: rgb(158, 158, 158);
+            display: flex;
+            padding: 0px;
+        }
+        div.Spese {
+            width: 30%;
+            margin: 0px 10px 0 0;
+            padding: -10px;
+        }
+        div.CosaFare {
+            flex: 1;
+            width: auto;
+            margin: 0px;
+            padding: -10px;
+        }
+        .CosaFare h2 {
+            text-align: center;
+        }
+        .CosaFare li {
+            line-height: 200%;
+        }
+        table{
+            margin: auto;
+            width: 90%;
+            height: 60%;
+            border: 1px solid white;
+            border-radius: 2px;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        td{
+            width: 30%;
+            text-align: center;
+        }
+        tfoot tr{border: 1px solid white;}
+        .foot td {
+            text-align:left
+        }
+        #total {text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Il mio viaggio a Londra</h1>
+        <div class="headImg">
+        <img src="/img/pexels-bill-emrich-230794-0.jpg" alt="fotoHeaderUno">
+        <img src="/img/pexels-bill-emrich-230794-1.jpg" alt="fotoHeaderDue">
+        <img src="/img/pexels-bill-emrich-230794-2.jpg" alt="fotoHeaderTre">
+        </div>
+    </header>
+    <hr>
+    <main>
+        <!--div tabella-->
+        <div class="Flex">
+        <div class="Spese">
+            <h2>Le mie spese</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Numero</th>
+                        <th>Descrizione</th>
+                        <th>Costo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120&euro;</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120&euro;</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120&euro;</td>
+                    </tr>
+                </tbody>
+                <tfoot class="foot">
+                    <tr>
+                        <td colspan="2" id="total">Totale</td>
+                        <td id="total">360&euro;</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!--div Cose da fare-->
+        <div class="CosaFare">
+            <h2>Cose da fare:</h2>
+            <ul>
+                <li>Visitare la Tower of London &#10008;</li>
+                <li>Visitare Greenwich &#10004;</li>
+                <li>Ascoltare un artista di strada a Covent Garden &#10004;</li>
+                <li>Mangiare il tipico Fish and Chips inglese &#10008;</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <!--div Info-->
+        <div class="info">
+            <h2>Info utili:</h2>
+            <ol>
+                <li>Numeri utili di emergenza
+                    <ul>
+                        <li><b>999</b> - Emergenza</li>
+                        <li><b>101</b> - Numero polizia</li>
+                        <li><b>111</b> - Numero assistenza medica</li>
+                    </ul>
+                </li>
+                <li>Hotel
+                    <ul>
+                        <li><b>Nome hotel</b>: buckingham palace</li>
+                        <li><b>Indirizzo hotel</b>: Westminste, London SW1A 1AA, Regno Unito</li>
+                    </ul>
+                </li>
+                <li>Aereo
+                    <ul>
+                        <li><b>Volo di Andata</b>: Y1234X, ore 9.30 da Milano Malpensa</li>
+                        <li><b>Volo di Ritorno</b>: Y1236X, ore 18.30 da London Heatrow</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <hr>
+        <div class="foto">
+            <h2>Le foto</h2>
+            <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" title="Ponte al tramonto" alt="foto Ponte al tramonto">
+            <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg"  title="Edificio con persone" alt="foto Edificio con persone">
+        </div>
+    </main>
+</body>
+</html>
