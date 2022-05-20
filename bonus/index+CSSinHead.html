@@ -16,8 +16,7 @@
             border-radius: 10px;
             padding: 10px;
         }
-        h1 {text-align: center;}
-        h2 {text-align: center;}
+        h1,h2 {text-align: center;}
         .headImg {
             display: flex;
             justify-content: center;
@@ -38,13 +37,13 @@
         div.Spese {
             width: 30%;
             margin: 0px 10px 0 0;
-            padding: -10px;
+            padding: 0px;
         }
         div.CosaFare {
             flex: 1;
             width: auto;
             margin: 0px;
-            padding: -10px;
+            padding: 0px;
         }
         .CosaFare h2 {
             text-align: center;
@@ -69,7 +68,7 @@
         .foot td {
             text-align:left
         }
-        #total {text-align: center;}
+        td.total {text-align: center;}
     </style>
 </head>
 <body>
@@ -114,8 +113,8 @@
                 </tbody>
                 <tfoot class="foot">
                     <tr>
-                        <td colspan="2" id="total">Totale</td>
-                        <td id="total">360&euro;</td>
+                        <td colspan="2" class="total">Totale</td>
+                        <td class="total">360&euro;</td>
                     </tr>
                 </tfoot>
             </table>
